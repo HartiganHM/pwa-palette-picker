@@ -36,15 +36,15 @@ body {
       align-self: center;
       height: 85px;
       width: 200px;
-      background-image: url('../images/Generate-Palette-Default.svg');
+      background-image: url('../images/buttons/Generate-Palette-Default.png');
       background-repeat: no-repeat;
       background-size: contain;
       cursor: pointer;
       &:hover {
-        background-image: url('../images/Generate-Palette-Hover.svg');
+        background-image: url('../images/buttons/Generate-Palette-Hover.png');
       }
       &:active {
-        background-image: url('../images/Generate-Palette-Active.svg');
+        background-image: url('../images/buttons/Generate-Palette-Active.png');
       }
     }
     .color-cap-left {
