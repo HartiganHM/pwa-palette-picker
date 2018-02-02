@@ -36,7 +36,8 @@ this.addEventListener('install', event => {
         '/css/fontello/font/fontello.svg',
         '/css/fontello/font/fontello.ttf',
         '/css/fontello/font/fontello.woff',
-        '/css/fontello/font/fontello.woff2'
+        '/css/fontello/font/fontello.woff2',
+        '/css/fontello/config.json'
       ])
     })
   );
