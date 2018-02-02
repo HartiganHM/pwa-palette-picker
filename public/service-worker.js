@@ -1,0 +1,56 @@
+this.addEventListener('install', event => {
+  event.waitUntil(
+    caches.open('assets-v1').then(cache => {
+      return cache.addAll([
+        '/',
+        '/css/fix.css',
+        '/css/styles.css',
+        '/js/scripts.js',
+        '/js/jquery.min.js',
+        '/images/Color-Caps-Bottom.svg',
+        '/images/Color-Caps-Top.svg',
+        '/images/Delete-Button-Active.svg',
+        '/images/Delete-Button-Hover.svg',
+        '/images/Delete-Button-Default.svg',
+        '/images/Generate-Palette-Active.svg',
+        '/images/Generate-Palette-Hover.svg',
+        '/images/Generate-Palette-Default.svg',
+        '/images/Palette-Picker-Logo.png',
+        '/images/paper-background.jpg',
+        '/images/Save-Project-Button-Active.svg',
+        '/images/Save-Project-Button-Hover.svg',
+        '/images/Save-Project-Button-Default.svg',
+        '/images/Save-Project-Input.svg'
+      ])
+    })
+  );
+});
+
+this.addEventListener('fetch', event => {
+  event.respondWith(
+    caches.match(event.request).then(response => {
+      return response || fetch(event.request);
+    })
+  );
+});
+
+this.addEventListener('activate', (event) => {
+  let cacheWhitelist = ['assets-v1'];
+
+  event.waitUntil(
+    caches.keys().then(keyList => {
+      return Promise.all(keyList.map(key => {
+        if (cacheWhitelist.indexOf(key) === -1) {
+          return caches.delete(key);
+        }
+      }));
+    })
+    .then(() => clients.claim())
+  );
+});
+
+this.addEventListener('message', (event) => {
+  if (event.data.type === 'add-palette') {
+    self.registration.showNotification(`${event.data.paletteName} was successfully added!`)
+  }
+});
