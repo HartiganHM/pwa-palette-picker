@@ -46,6 +46,13 @@ const postProject = async projectName => {
   }
 }
 
+const notifyPalettePost = name => {
+  navigator.serviceWorker.controller.postMessage({
+    type: 'add-palette',
+    paletteName: name
+  })
+}
+
 const postPalette = async (paletteObject, projectId) => {
   try {
     const { name, color1, color2, color3, color4, color5 } = paletteObject;
@@ -58,6 +65,7 @@ const postPalette = async (paletteObject, projectId) => {
       }
     });
 
+    notifyPalettePost(name);
     getPalettes();
   } catch (error) {
     return new Error(`Error posting palette: ${error}`);
