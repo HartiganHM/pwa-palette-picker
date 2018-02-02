@@ -33,14 +33,14 @@ body {
       align-self: center;
       height: 85px;
       width: 200px;
-      background-image: url("../images/Generate-Palette-Default.svg");
+      background-image: url("../images/buttons/Generate-Palette-Default.png");
       background-repeat: no-repeat;
       background-size: contain;
       cursor: pointer; }
       .app .color-selection-container .generate-palette-button:hover {
-        background-image: url("../images/Generate-Palette-Hover.svg"); }
+        background-image: url("../images/buttons/Generate-Palette-Hover.png"); }
       .app .color-selection-container .generate-palette-button:active {
-        background-image: url("../images/Generate-Palette-Active.svg"); }
+        background-image: url("../images/buttons/Generate-Palette-Active.png"); }
     .app .color-selection-container .color-cap-left {
       display: none; }
     .app .color-selection-container .color-cap-right {
@@ -109,14 +109,14 @@ body {
     left: -20px;
     width: 75px;
     height: 75px;
-    background-image: url("../images/Save-Project-Button-Default.svg");
+    background-image: url("../images/buttons/Save-Project-Button-Default.png");
     background-repeat: no-repeat;
     background-size: contain;
     cursor: pointer; }
     .app .save-project-button:hover {
-      background-image: url("../images/Save-Project-Button-Hover.svg"); }
+      background-image: url("../images/buttons/Save-Project-Button-Hover.png"); }
     .app .save-project-button:active {
-      background-image: url("../images/Save-Project-Button-Active.svg"); }
+      background-image: url("../images/buttons/Save-Project-Button-Active.png"); }
     .app .save-project-button:focus {
       outline: none; }
   .app .save-palette-section {
@@ -132,15 +132,15 @@ body {
       right: -20px;
       width: 75px;
       height: 75px;
-      background-image: url("../images/Save-Project-Button-Default.svg");
+      background-image: url("../images/buttons/Save-Project-Button-Default.png");
       background-repeat: no-repeat;
       background-size: contain;
       z-index: 1;
       cursor: pointer; }
       .app .save-palette-section .save-palette-submit:hover {
-        background-image: url("../images/Save-Project-Button-Hover.svg"); }
+        background-image: url("../images/buttons/Save-Project-Button-Hover.png"); }
       .app .save-palette-section .save-palette-submit:active {
-        background-image: url("../images/Save-Project-Button-Active.svg"); }
+        background-image: url("../images/buttons/Save-Project-Button-Active.png"); }
       .app .save-palette-section .save-palette-submit:focus {
         outline: none; }
     .app .save-palette-section .save-palette-input-wrapper {
@@ -231,14 +231,14 @@ body {
           height: 60px;
           width: 60px;
           margin-left: 10px;
-          background-image: url("../images/Delete-Button-Default.svg");
+          background-image: url("../images/buttons/Delete-Button-Default.png");
           background-repeat: no-repeat;
           background-size: contain;
           cursor: pointer; }
           .app .project-container .project .project-name-wrapper .delete-project-button:hover {
-            background-image: url("../images/Delete-Button-Hover.svg"); }
+            background-image: url("../images/buttons/Delete-Button-Hover.png"); }
           .app .project-container .project .project-name-wrapper .delete-project-button:active {
-            background-image: url("../images/Delete-Button-Active.svg"); }
+            background-image: url("../images/buttons/Delete-Button-Active.png"); }
       .app .project-container .project .palette-container {
         display: flex;
         flex-wrap: wrap;
@@ -277,14 +277,14 @@ body {
             .app .project-container .project .palette-container .project-palette .palette-color-group .delete-palette-button {
               height: 50px;
               width: 50px;
-              background-image: url("../images/Delete-Button-Default.svg");
+              background-image: url("../images/buttons/Delete-Button-Default.png");
               background-repeat: no-repeat;
               background-size: contain;
               cursor: pointer; }
               .app .project-container .project .palette-container .project-palette .palette-color-group .delete-palette-button:hover {
-                background-image: url("../images/Delete-Button-Hover.svg"); }
+                background-image: url("../images/buttons/Delete-Button-Hover.png"); }
               .app .project-container .project .palette-container .project-palette .palette-color-group .delete-palette-button:active {
-                background-image: url("../images/Delete-Button-Active.svg"); }
+                background-image: url("../images/buttons/Delete-Button-Active.png"); }
             .app .project-container .project .palette-container .project-palette .palette-color-group .trash-placeholder {
               opacity: 0; }
 
