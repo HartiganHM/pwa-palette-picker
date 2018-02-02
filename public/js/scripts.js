@@ -46,6 +46,13 @@ const postProject = async projectName => {
   }
 }
 
+const notifyPalettePost = name => {
+  navigator.serviceWorker.controller.postMessage({
+    type: 'add-palette',
+    paletteName: name
+  })
+}
+
 const postPalette = async (paletteObject, projectId) => {
   try {
     const { name, color1, color2, color3, color4, color5 } = paletteObject;
@@ -58,6 +65,7 @@ const postPalette = async (paletteObject, projectId) => {
       }
     });
 
+    notifyPalettePost(name);
     getPalettes();
   } catch (error) {
     return new Error(`Error posting palette: ${error}`);
@@ -533,3 +541,18 @@ $('.save-palette-submit').click(event => savePalette(event));
 $('.project-container').click(event => removePalette(event));
 $('.project-container').click(event => removeProject(event));
 $('.project-container').on('click', '.saved-color', event => setPaletteColors(event));
+
+if (!!navigator.serviceWorker) {
+  window.addEventListener('load', () => {
+
+    navigator.serviceWorker.register('../service-worker.js')
+      .then(registration => navigator.serviceWorker.ready)
+      .then(registration => {
+        Notification.requestPermission();
+        console.log('Service worker registration successful');
+      })
+      .catch(error => {
+        console.log(`ServiceWorker registration failed: ${error}`);
+      });
+  })
+}
