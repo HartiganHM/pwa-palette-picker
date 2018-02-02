@@ -25,7 +25,18 @@ this.addEventListener('install', event => {
         '/images/Save-Project-Button-Default.svg',
         '/images/Save-Project-Button-Hover.svg',
         '/images/Save-Project-Input.svg',
-        '/images/Select-Project-Dropdown.png'
+        '/images/Select-Project-Dropdown.png',
+        '/css/fontello/css/fontello.css',
+        '/css/fontello/css/fontello-ie7.css',
+        '/css/fontello/css/fontello-ie7-codes.css',
+        '/css/fontello/css/fontello-embedded.css',
+        '/css/fontello/css/fontello-codes.css',
+        '/css/fontello/css/animation.css',
+        '/css/fontello/font/fontello.eot',
+        '/css/fontello/font/fontello.svg',
+        '/css/fontello/font/fontello.ttf',
+        '/css/fontello/font/fontello.woff',
+        '/css/fontello/font/fontello.woff2'
       ])
     })
   );
