@@ -129,15 +129,15 @@ body {
     left: -20px;
     width: 75px;
     height: 75px;
-    background-image: url('../images/Save-Project-Button-Default.svg');
+    background-image: url('../images/buttons/Save-Project-Button-Default.png');
     background-repeat: no-repeat;
     background-size: contain;
     cursor: pointer;
     &:hover {
-      background-image: url('../images/Save-Project-Button-Hover.svg');
+      background-image: url('../images/buttons/Save-Project-Button-Hover.png');
     }
     &:active {
-      background-image: url('../images/Save-Project-Button-Active.svg');
+      background-image: url('../images/buttons/Save-Project-Button-Active.png');
     }
     &:focus {
       outline: none;
@@ -156,16 +156,16 @@ body {
       right: -20px;
       width: 75px;
       height: 75px;
-      background-image: url('../images/Save-Project-Button-Default.svg');
+      background-image: url('../images/buttons/Save-Project-Button-Default.png');
       background-repeat: no-repeat;
       background-size: contain;
       z-index: 1;
       cursor: pointer;
       &:hover {
-        background-image: url('../images/Save-Project-Button-Hover.svg');
+        background-image: url('../images/buttons/Save-Project-Button-Hover.png');
       }
       &:active {
-        background-image: url('../images/Save-Project-Button-Active.svg');
+        background-image: url('../images/buttons/Save-Project-Button-Active.png');
       }
       &:focus {
         outline: none;
