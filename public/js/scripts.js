@@ -541,3 +541,18 @@ $('.save-palette-submit').click(event => savePalette(event));
 $('.project-container').click(event => removePalette(event));
 $('.project-container').click(event => removeProject(event));
 $('.project-container').on('click', '.saved-color', event => setPaletteColors(event));
+
+if (!!navigator.serviceWorker) {
+  window.addEventListener('load', () => {
+
+    navigator.serviceWorker.register('../service-worker.js')
+      .then(registration => navigator.serviceWorker.ready)
+      .then(registration => {
+        Notification.requestPermission();
+        console.log('Service worker registration successful');
+      })
+      .catch(error => {
+        console.log(`ServiceWorker registration failed: ${error}`);
+      });
+  })
+}
