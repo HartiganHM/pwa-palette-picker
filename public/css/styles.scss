@@ -270,15 +270,15 @@ body {
           height: 60px;
           width: 60px;
           margin-left: 10px;
-          background-image: url('../images/Delete-Button-Default.svg');
+          background-image: url('../images/buttons/Delete-Button-Default.png');
           background-repeat: no-repeat;
           background-size: contain;
           cursor: pointer;
           &:hover {
-            background-image: url('../images/Delete-Button-Hover.svg');
+            background-image: url('../images/buttons/Delete-Button-Hover.png');
           }
           &:active {
-            background-image: url('../images/Delete-Button-Active.svg');
+            background-image: url('../images/buttons/Delete-Button-Active.png');
           }
         }
       }
@@ -326,15 +326,15 @@ body {
             .delete-palette-button {
               height: 50px;
               width: 50px;
-              background-image: url('../images/Delete-Button-Default.svg');
+              background-image: url('../images/buttons/Delete-Button-Default.png');
               background-repeat: no-repeat;
               background-size: contain;
               cursor: pointer;
               &:hover {
-                background-image: url('../images/Delete-Button-Hover.svg');
+                background-image: url('../images/buttons/Delete-Button-Hover.png');
               }
               &:active {
-                background-image: url('../images/Delete-Button-Active.svg');
+                background-image: url('../images/buttons/Delete-Button-Active.png');
               }
             }
             .trash-placeholder {
