@@ -11,19 +11,19 @@ this.addEventListener('install', event => {
         '/images/Color-Caps-Left.svg',
         '/images/Color-Caps-Right.svg',
         '/images/Color-Caps-Top.svg',
-        '/images/Delete-Button-Active.svg',
-        '/images/Delete-Button-Default.svg',
-        '/images/Delete-Button-Hover.svg',
+        '/images/buttons/Delete-Button-Active.png',
+        '/images/buttons/Delete-Button-Default.png',
+        '/images/buttons/Delete-Button-Hover.png',
         '/images/Dropdown-Item.png',
-        '/images/Generate-Palette-Active.svg',
-        '/images/Generate-Palette-Default.svg',
-        '/images/Generate-Palette-Hover.svg',
+        '/images/buttons/Generate-Palette-Active.png',
+        '/images/buttons/Generate-Palette-Default.png',
+        '/images/buttons/Generate-Palette-Hover.png',
         '/images/Palette-Picker-Logo.png',
         '/images/paper-background.jpg',
         '/images/Save-Palette-Input.svg',
-        '/images/Save-Project-Button-Active.svg',
-        '/images/Save-Project-Button-Default.svg',
-        '/images/Save-Project-Button-Hover.svg',
+        '/images/buttons/Save-Project-Button-Active.png',
+        '/images/buttons/Save-Project-Button-Default.png',
+        '/images/buttons/Save-Project-Button-Hover.png',
         '/images/Save-Project-Input.svg',
         '/images/Select-Project-Dropdown.png',
         '/css/fontello/css/fontello.css',
@@ -36,7 +36,8 @@ this.addEventListener('install', event => {
         '/css/fontello/font/fontello.svg',
         '/css/fontello/font/fontello.ttf',
         '/css/fontello/font/fontello.woff',
-        '/css/fontello/font/fontello.woff2'
+        '/css/fontello/font/fontello.woff2',
+        '/css/fontello/config.json'
       ])
     })
   );
