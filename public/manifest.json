@@ -7,22 +7,22 @@
   "start_url": "index.html",
   "icons": [
     {
-      "src": "img/icon-48.png",
+      "src": "./images/icons/Palette-Picker-Icon-48.png",
       "type": "image/png",
       "sizes": "48x48"
     },
     {
-      "src": "img/icon-96.png",
+      "src": "./images/icons/Palette-Picker-Icon-96.png",
       "type": "image/png",
       "sizes": "96x96"
     },
     {
-      "src": "img/icon-192.png",
+      "src": "./images/icons/Palette-Picker-Icon-192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "img/icon-512.png",
+      "src": "./images/icons/Palette-Picker-Icon-512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
